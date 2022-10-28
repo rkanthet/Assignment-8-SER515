@@ -1,4 +1,6 @@
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -9,9 +11,30 @@ public class urinals {
         System.out.println("1. File");
         System.out.println("2. Console");
         Scanner scanner = new Scanner(System.in);
-       // int choice = scanner.nextInt();
-        String b = countUrinals("0100");
-        System.out.println(b);
+        int choice = scanner.nextInt();
+        switch(choice)
+        {
+            case 1:
+            {
+                System.out.println("Enter the input file : ");
+                String str = scanner.next();
+                readFile(str);
+                break;
+            }
+            case 2:
+            {
+                String str = outputFileName();
+                String s="";
+                while(!s.equals("-1")) {
+                    System.out.println("Enter String : ");
+                    s = scanner.next();
+                    if(!s.equals("-1")) {
+                        String ans = countUrinals(s);
+                        writeToFile(str, ans);
+                    }
+                }
+            }
+        }
     }
 
     public static String countUrinals(String input){
@@ -37,7 +60,6 @@ public class urinals {
                 return "Invalid input";
             }
         }
-
         return String.valueOf(ans);
 
     }
@@ -49,10 +71,11 @@ public class urinals {
             if(file.length()==0){
                 return "File is empty, please enter a valid file";
             }
+            String outname = outputFileName();
             while (scr.hasNextLine()) {
                 String line = scr.nextLine();
                 String a = countUrinals(line);
-                System.out.println(a);
+                writeToFile(outname,a);
 
             }
             return "File found and processed properly";
@@ -60,18 +83,42 @@ public class urinals {
             return e.getMessage();
         }
     }
-    public String outputFileName() {
+    public static String outputFileName() {
         String fileName = "rule.txt";
         int count=0;
         File file = new File(fileName);
         while(file.exists())
         {
+            count++;
             fileName = fileName.substring(0,4) + count + ".txt";
             file = new File(fileName);
-            count++;
         }
         return fileName;
     }
 
-
+    static String writeToFile(String fileName, String value)
+    {
+        try
+        {
+            if (!fileName.substring(0, 4).equals("rule")) {
+                return "Invalid input file name to write";
+            }
+            FileWriter fileWriter = new FileWriter(fileName, true);
+            BufferedWriter buffWriter = new BufferedWriter(fileWriter);
+            try{
+                int i = Integer.parseInt(value);
+            }
+            catch (NumberFormatException e){
+                return "Invalid input to write";
+            }
+            buffWriter.write(value);
+            buffWriter.newLine();
+            buffWriter.close();
+            return "Write is successful";
+        }
+        catch(IOException e)
+        {
+            return e.getMessage();
+        }
+    }
 }

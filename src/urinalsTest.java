@@ -1,9 +1,19 @@
 // Auth: Rahul Nanda Kantheti
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class urinalsTest {
 
+    @org.junit.jupiter.api.Test
+    void checkOutfileName(){
+        urinals testcase = new urinals();
+        String out = "rule1.txt";
+        // change the string out if rule.txt files exist to the expected file name or else the test will fail
+        assertEquals(out, testcase.outputFileName());
+    }
     // countUrinals tests
+
     @org.junit.jupiter.api.Test
     void nullInput() {
         assertEquals(urinals.countUrinals(null), "Input String Null");
@@ -24,6 +34,8 @@ public class urinalsTest {
         assertEquals(urinals.countUrinals("111"), "-1");
     }
 
+    //outputfilename test
+
     // test cases for read file
     @org.junit.jupiter.api.Test
     void fileFound() {
@@ -35,22 +47,28 @@ public class urinalsTest {
     @org.junit.jupiter.api.Test
     void fileDoesntExists() {
         urinals testcase = new urinals();
-        assertEquals("urvinals.dat (No such file or directory)", testcase.readFile("urvinals.dat"));
+        assertEquals("nonexistentfile.dat (No such file or directory)", testcase.readFile("nonexistentfile.dat"));
     }
 
     // Error when file is empty
-    @org.junit.jupiter.api.Test
+    @Test
     void fileEmpty() {
         urinals testcase = new urinals();
         assertEquals("File is empty, please enter a valid file", testcase.readFile("emptyUrinals.dat"));
 
     }
-    //outputfilename test
-    @org.junit.jupiter.api.Test
-    void checkOutputfileName(){
+
+    // only integer values should be written to file
+    @Test
+    void badFileContent(){
         urinals testcase = new urinals();
-        String out = "rule.txt";
-        // change the string out if rule.txt files exist to the expected file name or else the test will fail
-        assertEquals(out,testcase.outputFileName());
+        assertEquals("Invalid input to write",testcase.writeToFile("rule.txt","aaa"));
+    }
+
+    // file name should be in format of ruleX.txt
+    @Test
+    void badFileName(){
+        urinals testcase = new urinals();
+        assertEquals("Invalid input file name to write",testcase.writeToFile("ajjsj.txt","4"));
     }
 }
