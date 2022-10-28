@@ -12,23 +12,19 @@ public class urinals {
         System.out.println("2. Console");
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
-        switch(choice)
-        {
-            case 1:
-            {
+        switch (choice) {
+            case 1 -> {
                 System.out.println("Enter the input file : ");
                 String str = scanner.next();
                 readFile(str);
-                break;
             }
-            case 2:
-            {
+            case 2 -> {
                 String str = outputFileName();
-                String s="";
-                while(!s.equals("-1")) {
+                String s = "";
+                while (!s.equals("-1")) {
                     System.out.println("Enter String : ");
                     s = scanner.next();
-                    if(!s.equals("-1")) {
+                    if (!s.equals("-1")) {
                         String ans = countUrinals(s);
                         writeToFile(str, ans);
                     }
@@ -100,13 +96,13 @@ public class urinals {
     {
         try
         {
-            if (!fileName.substring(0, 4).equals("rule")) {
+            if (!fileName.startsWith("rule")) {
                 return "Invalid input file name to write";
             }
             FileWriter fileWriter = new FileWriter(fileName, true);
             BufferedWriter buffWriter = new BufferedWriter(fileWriter);
             try{
-                int i = Integer.parseInt(value);
+                Integer.parseInt(value);
             }
             catch (NumberFormatException e){
                 return "Invalid input to write";
