@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1fe14ba-d82a-48be-a635-d7e8123315ff" name="Changes" comment="Adding more junit for countUrinals">
+    <list default="true" id="c1fe14ba-d82a-48be-a635-d7e8123315ff" name="Changes" comment="fixing warning for countUrinals Tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/urinals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/urinals.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/urinalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/urinalsTest.java" afterDir="false" />
@@ -101,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666934296276</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixing warning for countUrinals Tests">
+      <created>1666934648760</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666934648760</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +127,7 @@
     <MESSAGE value="one logic and one null testcase" />
     <MESSAGE value="Adding junit" />
     <MESSAGE value="Adding more junit for countUrinals" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding more junit for countUrinals" />
+    <MESSAGE value="fixing warning for countUrinals Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing warning for countUrinals Tests" />
   </component>
 </project>
