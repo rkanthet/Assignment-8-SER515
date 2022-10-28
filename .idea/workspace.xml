@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1fe14ba-d82a-48be-a635-d7e8123315ff" name="Changes" comment="Adding junit">
+    <list default="true" id="c1fe14ba-d82a-48be-a635-d7e8123315ff" name="Changes" comment="Adding more junit for countUrinals">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/urinals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/urinals.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/urinalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/urinalsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666934036679</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adding more junit for countUrinals">
+      <created>1666934296276</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666934296276</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +119,7 @@
     <MESSAGE value="First commit with skeleton" />
     <MESSAGE value="one logic and one null testcase" />
     <MESSAGE value="Adding junit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding junit" />
+    <MESSAGE value="Adding more junit for countUrinals" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding more junit for countUrinals" />
   </component>
 </project>

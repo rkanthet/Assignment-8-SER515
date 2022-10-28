@@ -2,7 +2,7 @@
 public class urinals {
     public static void main(String[] args) {
         System.out.println("Hello world!");
-        String a = countUrinals("11");
+        String a = countUrinals("0100");
         System.out.println(a);
     }
 
@@ -20,11 +20,10 @@ public class urinals {
                     break;
                 }
             } else if (input.charAt(i) == '0') {
-
-                if ((i - 1 < 0 || input.charAt(i - 1) == '0') && (i + 1 >= n || input.charAt(i + 1) == '0'))
+                if ((i - 1 < 0 || input.charAt(i - 1) == '0') && (i + 1 >= n || input.charAt(i + 1) == '0')) {
                     ans++;
                     i++;
-
+                }
             }
             else{
                 return "Invalid input";
