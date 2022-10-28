@@ -45,4 +45,12 @@ public class urinalsTest {
         assertEquals("File is empty, please enter a valid file", testcase.readFile("emptyUrinals.dat"));
 
     }
+    //outputfilename test
+    @org.junit.jupiter.api.Test
+    void checkOutputfileName(){
+        urinals testcase = new urinals();
+        String out = "rule.txt";
+        // change the string out if rule.txt files exist to the expected file name or else the test will fail
+        assertEquals(out,testcase.outputFileName());
+    }
 }

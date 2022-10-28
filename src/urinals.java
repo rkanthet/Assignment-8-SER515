@@ -60,7 +60,18 @@ public class urinals {
             return e.getMessage();
         }
     }
-
+    public String outputFileName() {
+        String fileName = "rule.txt";
+        int count=0;
+        File file = new File(fileName);
+        while(file.exists())
+        {
+            fileName = fileName.substring(0,4) + count + ".txt";
+            file = new File(fileName);
+            count++;
+        }
+        return fileName;
+    }
 
 
 }
