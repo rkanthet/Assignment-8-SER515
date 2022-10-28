@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1fe14ba-d82a-48be-a635-d7e8123315ff" name="Changes" comment="First commit with skeleton">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-8-SER515.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/urinals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/urinalsTest.java" afterDir="false" />
+    <list default="true" id="c1fe14ba-d82a-48be-a635-d7e8123315ff" name="Changes" comment="Adding junit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/urinalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/urinalsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +31,38 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="urinals" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="urinals" />
+      <module name="Assignment-8-SER515" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="urinalsTest.invalidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Assignment-8-SER515" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="urinalsTest" />
+      <option name="METHOD_NAME" value="invalidInput" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.urinalsTest.invalidInput" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,6 +72,28 @@
       <option name="presentableId" value="Default" />
       <updated>1666895479160</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit with skeleton">
+      <created>1666927626829</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666927626829</updated>
+    </task>
+    <task id="LOCAL-00002" summary="one logic and one null testcase">
+      <created>1666933992028</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666933992028</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding junit">
+      <created>1666934036679</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666934036679</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -65,6 +109,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit with skeleton" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit with skeleton" />
+    <MESSAGE value="one logic and one null testcase" />
+    <MESSAGE value="Adding junit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding junit" />
   </component>
 </project>
