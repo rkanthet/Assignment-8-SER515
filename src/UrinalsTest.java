@@ -7,6 +7,7 @@ public class UrinalsTest {
 
     @org.junit.jupiter.api.Test
     void acheckOutfileName(){
+        // string here is rule1 becuase readfile test cases run before this and create a rule.txt file already
         String out = "rule1.txt";
         // change the string out if rule.txt files exist to the expected file name or else the test will fail
         assertEquals(out, urinals.outputFileName());
